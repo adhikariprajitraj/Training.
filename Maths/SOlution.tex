@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+\begin{document}
+
+\title{Solution to Problem of the day.}
+\author{Prajit Adhikari}
+\maketitle
+
+
+
+1.Find all integers $n$, $n \geq 1$, such that $n . 2^{n+1} + 1$ is a perfect square.\\
+\textbf{Solution:}\\
+Let us suppose that, $n. 2^{n+1}+1= m^2$. Then, we have,
+$n.2^{n+1} = (m+1)(m-1)$\\
+By pigeon hole principle we know that, $2^{n}| (m+1)$  or $2^{n}| (m-1)$, then,\\ 
+Case I: $m+1= k. 2^n \implies m-1= k.2^n-2$\\
+$$\implies 2n= k^2.2^n-2k \implies n+k= k^2.2^{n-1}$$
+For $n>3$, we have, $k^2.2^{n-1}> n+k$,\\
+So, we have $n \leq 3$, then,\\
+Checking the cases, only $n=3$, works.\\
+
+Case II: $m-1= k.2^n \implies m+1= k.2^n+2$\\
+$$\implies 2n= k^2.2^n+2k \implies n-k =k^2.2^n$$
+Since, $k \geq 1$, we have that $2^n>n$, which implies that $RHS>LHS$. So, no solution.
+
+Hence, the only number for which the expression is a perfect square is $n=3$. QED
+
+
+
+%INMO%
+\textbf{Problem 1}\\
+Let $ABC$ be a triangle with $\angle{BAC} > 90$.Let $D$ be a point on the segment $BC$ and $E$ be a point on line $AD$ such that $AB$ is tangent to the circumcircle of triangle $ACD$ at $A$ and $BE$ is perpendicular to $AD$.Given that $CA=CD$ and $AE=CE$.Determine $\angle{BCA}$ in degrees.\newline
+
+\textbf{Problem 2}\\
+Let $A_1B_1C_1D_1E_1$ be a regular pentagon.For $ 2 \le n \le 11$ , let $A_nB_nC_nD_nE_n$ be the pentagon whose vertices are the midpoint of the sides $A_{n-1}B_{n-1}C_{n-1}D_{n-1}E_{n-1}$.All the 5 vertices of each of the 11 pentagons are arbitrarily coloured red or blue.Prove that four points among these 55 points have the same colour and form the vertices of a cyclic quadrilateral.\newline
+
+
+
+\textbf{Problem 3}\\
+Let $m,n$ be distinct positive integers.Let $(m,n)$ denote $gcd(m,n)$ .Prove that $$(m,n) + (m+1,n+1) + (m+2,n+2) \le 2|m-n| + 1 $$Also determine the equality cases.\newline
+
+
+
+\textbf{Problem 4}\\
+Let $n$ and $M$ be positive integers such that $M>n^{n-1}$.Prove that there are $n$ distinct primes $p_1,p_2 \cdots p_n$ such that $p_j$ divides $M + j$ for all $1 \le j \le n$.\newline
+
+
+\textbf{Problem 5}\\
+Let $AB$ be the diameter of a circle $\Gamma$ and let $C$ be a point on $\Gamma$ different from $A,B$.Let $D$ be the foot of perpendicular from $C$ to $AB$.Let $K$ be a point on the segment $CD$ such that $AC$ is equal to the semi perimeter of $ADK$.Show that the ex circle of $ADK$ opposite to $A$ is tangent to $\Gamma$.
+\newline
+
+
+
+\textbf{Problem 6}\\
+Let $f$ be a function defined from ${{(x,y) : x,y real, xy\ne 0}}$ to the set of all positive real numbers such that\\
+$ (i) f(xy,z)= f(x,z)\cdot f(y,z)$ for all $x,y \ne 0$\\
+$ (ii) f(x,1-x) = 1 $ for all $x \ne 0,1$\\
+Prove that
+$ (a) f(x,x) = f(x,-x) = 1$ for all $x \ne 0$\\
+$(b) f(x,y)\cdot f(y,x) = 1 $ for all $x,y \ne 0$\\
+
+
+\end{document}

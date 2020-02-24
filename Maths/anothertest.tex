@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+
+\begin{enumerate}
+\item Find all pairs of natural numbers n and prime numbers p such that $\sqrt{n+\frac{p}{n}}$ is a natural number.\\
+\textit{Solution:}\\
+First, we require that $ \frac{p}{n} $ is an integer, so either $ n=1$ or $p$. In any case, $ p + 1 = a^2 $ for some natural $a$. But then $ p = (a-1)(a+1)$ so $ a - 1 = 1 $. Hence $ a = 2 $ so the only solution is $ n,p = (1,3)$ and $(3,3)$.\\
+Remarks: This is a very easy question and, requires you to know about the properties of primes.
+First, if a number divides a prime then it is either that prime or 1. Second, if prime can be expressed as a multiple of two natural number then one of them has to be 1.
+
+
+\item 6 points are given on a plane(no 3 of which are collinear), prove that we can always construct a convex pentagon.\\
+\textit{Solution:}\\
+We can't always construct a convex pentagon, although there are many cases in which we can. For the contradiction, just consider two points inside a square such that the line joining two points is parallel to one side of square.\\
+Remarks: Remember, you can always disprove a statement even by one unique example. This was made for the carefulness of the details.
+
+\item Find all functions $f:\mathbb{N}\to\mathbb{N}$ such that \[f(f(n))=n+2015\]where $n\in \mathbb{N}.$\\
+\textit{Solution:}\\
+Define $a(n)=f(n)-n$. Then, from $f(f(n))=n+2015$ we get $(f(f(n))-f(n))+(f(n)-n)=2015$, or $a(f(n))+a(n)=2015$ for every $n$ natural.
+
+If we replace $n$ by $f(n)$ in $a(f(n))+a(n)=2015$, we get $a(f(f(n)))+a(f(n))=2015=a(f(n))+a(n)$, and then $a(n+2015)=a(n)$ for every natural $n$. Thus, $a$ is an 1987-periodic function.
+
+Now, let $a_1=a(1), a_2=a(2),...,a_{2015}=a(2015)$ be the 2015 possible values of $a(n)$ (Since $a$ is periodic, this is possible). We must pair the 1987 $a_i$ in the following manner: $a_i$ is paired with $a_j$ if $a_i +a_j =1987$ (we can always do this, because $a(f(n))+a(n)=1987$ for every $n$ natural). If there's two or more $j$ satisfying the pair, anyone serve. So, we can divide 1987 numbers in pairs, and this is a contradiction, because 1987 is odd. Finally, the problem is solved.\\
+Remarks: This is a slightly harder problems and most of you have worked on it completely well.
+But you have to show that $f(n+2015)=f(n)+2015$ implies $f(n+2015t)=f(n)+2015t$ for clarity. For instance, see that $f(n+2015(t-1)+2015)= f(n+2015(t-1))+2015$, and further $t$ iterations such that it becomes, $f(n+2015t)=f(n)+2015t$. 
+
+
+\newpage
+
+
+\item İn triangle $ABC$ the bisector of $\angle BAC$ intersects the side $BC$ at the point $D$.The circle $\omega $ passes through $A$ and tangent to the side $BC$ at $D$.$AC$ and $\omega $ intersects at $M$ second time , $BM$ and $\omega $ intersects at $P$ second time. Prove that point $P$ lies on median of triangle $ABD$.\\
+\textit{Solution:}\\
+Note that $$\angle PAB = \angle DAB - \angle DAP = \angle DAC - \angle DMP = \angle CDM - \angle DMB$$$$= 180^{\circ}-\angle BDM - \angle DMB = \angle DBM = \angle DBP.$$This means that $(ABP)$ is tangent to line $BC$ so if we let $X = AP \cap BC$ we have $XB^2 = XP \cdot XA = XD^2$ meaning $XB=XD$ so $AP$ is indeed a median on triangle $ABD$.
+
+\end{enumerate}
+
+\end{document}

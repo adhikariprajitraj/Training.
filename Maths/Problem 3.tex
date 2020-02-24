@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+\begin{document}
+
+\title{Solution to Problem of the day.}
+\author{Prajit Adhikari}
+\maketitle
+
+3. The real numbers $a, b, c, d$ satisfy simultaneously the equations
+$$abc - d = 1, bcd - a = 2, cda - b = 3, dab - c = -6.$$
+Prove that $a + b + c + d \not = 0$.\\
+Solution:\\
+For the sake of contradiction, assume that,\\
+$a+b+c+d=0$, then adding all the equations of above, we get,
+$$abc+bcd+cda+dab=0$$
+Then, we have,adding $bc(b+c)$ to both side, we have,
+$$bc(a+d)+ bc(b+c)+ad(b+c)= bc(b+c) \implies bc(a+d+b+c)+ad(b+c)=bc(b+c)$$
+Since, $a+b+c+d=0$ and considering $(b+c) \not = 0$, we have,
+$$ad(b+c)=bc(b+c) \implies ad = bc$$
+Similarly,
+$$ ac(b+d)+ac(a+c)+bd(a+c)=ac(a+c) \implies ac=bd \implies c=d,a=b \implies a=b=c=d=0$$
+which is absurd. Otherwise we must have, $a+c=0, b+c=0 \implies a=b$.On further case, we again we get, $a=b=c=d=0$. Which is false. Contradiction.
+So, $a+b+c+d$ is not equal to $0$ for $a,b,c,d \in \mathbb{R}$. QED
+
+
+
+
+
+
+
+
+\end{document}

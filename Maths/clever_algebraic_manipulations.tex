@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{graphicx,wrapfig,lipsum}
+
+
+\begin{document}
+
+\title{Clever Algebraic Tricks}
+\author{Prajit Adhikari}
+\date{}
+\maketitle
+
+
+In this article, we are going to see some beautiful and clever manipulation of algebraic problems in mathematical Olympiads. First, I expect the reader to know the basic algebraic formulae like $(a+c)^2, a^2-b^2,...$. Now, let's dig in:
+
+Let's start with a problem.
+\begin{enumerate}
+    \item Factorise $(a-b)^3+(b-c)^3+(c-a)^3$.
+\newline
+First, let's think what can do we do to factorize this. Of course, expanding is first idea that comes to our mind. But, how about a beautiful approach, can you find it?
+Hint: $(a-b)+(b-c)+(c-a)=0$ must tell you something.
+
+Indeed, it is related to the expression:
+$$a^3+b^3+c^3-3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$$
+Can you now draw the conclusion? Stop and take your time.
+
+See that, if $a+b+c =0$, then we have $a^3+b^3+c^3-3abc=0$, which gives,
+$$a^3+b^3+c^3=3abc$$
+If you did think over it for sometime, then you must have found the same approach as below:
+Since $(a-b)+(b-c)+(c-a)=0$, we can directly write 
+$$(a-b)^3+(b-c)^3+(c-a)^3= 3(a-b)(b-c)(c-a)$$
+As simple as that, and we are done. 
+
+
+\item Let $a,b,c$ be distinct real numbers. Prove that 
+$$\sqrt[3]{a-b} + \sqrt[3]{b-c} +\sqrt[3]{c-a}$$
+can't be equal to zero.
+\newline
+Do you see something? What happens when it is zero? 
+Assume for the sake of contradiction, that
+$$\sqrt[3]{a-b} + \sqrt[3]{b-c} +\sqrt[3]{c-a} = 0$$
+then, using, $a^3+b^3+c^3-3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$, we get,
+$$(a-b)+(b-c)+(c-a) = 3\sqrt[3]{(a-b)(b-c)(c-a)}$$
+$$\implies (a-b)(b-c)(c-a)=0  \implies a=b, b=c, \textbf{ or } c=a$$
+which is not possible since $a,b,c$ are distinct.
+\end{enumerate}
+
+Now, it's your turn to do some problems using this method:
+\begin{enumerate}
+    \item Prove that $\sqrt[3]{2- \sqrt{5}}+ \sqrt[3]{2+ \sqrt{5}}$ is a rational number.
+    
+    \item Let $x$ be a real number such that 
+    $$ \sqrt[3]{x} +\frac{1}{\sqrt[3]{x}} =3$$
+    Find the value of $x^3+\frac{1}{x^3}+2$.
+    
+    \item Find real solutions $x,y,z$ for the given equation
+    $$x^3+y^3+z^3 = (x+y+z)^3$$
+\end{enumerate}
+I think this much should be enough to cover up this trick. Now, let's move on to another one.
+
+
+Simon's Favorite Factoring Trick(SFFT)
+SFFT is very basic yet intuitive way of solving problems. 
+
+
+
+
+
+
+
+
+
+\end{document}
